@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= headerTitle %></title>
+</head>
+<body>
+
+    <!-- Display your name -->
+    <h1><%= myName %></h1>
+
+    <!-- Display the MEAN stack header -->
+    <h2><%= headerTitle %></h2>
+
+    <!-- List of MEAN definitions -->
+    <ul>
+        <% definitions.forEach(function(item) { %>
+            <li>
+                <strong><%= item.term %>:</strong>
+                <%= item.definition %>
+            </li>
+        <% }) %>
+    </ul>
+
+</body>
+</html>
+
+
